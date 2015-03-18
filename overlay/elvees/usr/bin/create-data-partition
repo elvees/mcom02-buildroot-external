@@ -1,0 +1,37 @@
+#!/usr/bin/env python
+
+"""
+A tool to create a large partition at the end of MMCBLK
+"""
+
+import glob
+import os
+import subprocess
+import sys
+
+MMCBLK = '/dev/mmcblk0'
+MOUNT_DIR = '/data'
+FS_TYPE = 'ext4'
+
+pstring = subprocess.check_output(['parted', MMCBLK, 'unit', 's', 'print', 'free'])
+ptable_before = set(glob.glob(MMCBLK + '*'))
+freesp = pstring.rstrip().split('\n')[-1]
+
+if 'Free Space' not in freesp:
+    raise IOError("No free space at the end of {}".format(MMCBLK))
+
+fspsplit = freesp.split()
+subprocess.check_call(['parted', MMCBLK, 'mkpart',
+                       'primary', fspsplit[0], fspsplit[1]])
+subprocess.check_call(['partprobe', MMCBLK])
+
+ptable_after = set(glob.glob(MMCBLK + '*'))
+new_partition = (ptable_after - ptable_before).pop()
+
+subprocess.check_call(['mkfs.{}'.format(FS_TYPE), new_partition, '-F'])
+with open('/etc/fstab', 'a') as f:
+    f.write('\n{}  {}   {} defaults   0  0\n'.format(new_partition, MOUNT_DIR, FS_TYPE))
+if not os.path.exists(MOUNT_DIR):
+    os.mkdir(MOUNT_DIR)
+subprocess.check_call(['mount', '-a'])
+

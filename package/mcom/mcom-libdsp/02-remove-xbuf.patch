@@ -1,0 +1,22 @@
+diff -aurp mcom-libdsp-101/libdsp.c mcom-libdsp-101.patched/libdsp.c
+--- mcom-libdsp-101/libdsp.c	2015-09-28 12:29:42.393515638 +0300
++++ mcom-libdsp-101.patched/libdsp.c	2015-09-30 10:52:41.520027085 +0300
+@@ -85,7 +85,6 @@ int dsp_access_init()
+         else if (strcmp(data, "xyram0") == 0) area_id = AREA_XYRAM0;
+         else if (strcmp(data, "xyram1") == 0) area_id = AREA_XYRAM1;
+         else if (strcmp(data, "cmn_regs") == 0) area_id = AREA_COMMON_REGS;
+-        else if (strcmp(data, "xbuf") == 0) area_id = AREA_XBUF;
+         else {
+             fprintf(stderr, "Unknown area name: %s\n", data);
+             return 0;
+diff -aurp mcom-libdsp-101/libdsp.h mcom-libdsp-101.patched/libdsp.h
+--- mcom-libdsp-101/libdsp.h	2015-02-10 02:40:46.000000000 +0300
++++ mcom-libdsp-101.patched/libdsp.h	2015-09-30 10:52:29.512049521 +0300
+@@ -12,7 +12,6 @@ enum {
+     AREA_XYRAM0,        // Память данных XYRAM0 (ближе к DSP0)
+     AREA_XYRAM1,        // Память данных XYRAM1 (ближе к DSP1)
+     AREA_COMMON_REGS,   // Общие регистры для DSP0 и DSP1
+-    AREA_XBUF,          // Синхронная память XBUF
+     NB_DSP_AREAS
+ };
+ 

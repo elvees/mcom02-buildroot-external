@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+if [ ${IFACE:0:6} != "lowpan" ]; then
+	exit 0
+fi
+
+WPAN=${IFACE:2}
+
+ip link delete $IFACE
+ip link set $WPAN down

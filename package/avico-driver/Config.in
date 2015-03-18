@@ -1,0 +1,8 @@
+config BR2_PACKAGE_AVICO_DRIVER
+	bool "Avico driver"
+	depends on BR2_LINUX_KERNEL
+	help
+	  Kernel driver for Avico (a.k.a. VELcore-01) HW encoder/decoder
+
+comment "Avico driver needs a Linux kernel to be built"
+	depends on !BR2_LINUX_KERNEL

@@ -1,0 +1,6 @@
+config BR2_PACKAGE_MCOM_FC_DSP
+	bool "fc-dsp"
+	default n
+	select BR2_PACKAGE_MCOM_LIBDSP
+	help
+	  Functional test for Elcore-30M DSP

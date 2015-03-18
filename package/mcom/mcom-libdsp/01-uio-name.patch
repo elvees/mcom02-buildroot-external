@@ -1,0 +1,11 @@
+--- mcom-libdsp-101/libdsp.c	2015-02-10 02:40:46.000000000 +0300
++++ mcom-libdsp-101.patched/libdsp.c	2015-09-28 12:25:42.674962815 +0300
+@@ -59,7 +59,7 @@ int dsp_access_init()
+             return 0;
+         }
+         fclose(fp);
+-        if (strncmp(data, "DSP", 3) == 0)
++        if (strncmp(data, "dsp", 3) == 0)
+             break;
+     }
+     

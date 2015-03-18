@@ -1,0 +1,76 @@
+#!/bin/sh
+
+# description: Mali driver startup
+
+start_ump() {
+    if [ ! -e /dev/ump ]; then
+        echo -n "load ump: "
+        modprobe ump
+        mknod /dev/ump c $(grep -F ump /proc/devices | cut -d" " -f1) 0
+        chmod 666 /dev/ump
+        echo "OK"
+    fi
+}
+
+start_mali() {
+    if [ ! -e /dev/ump ]; then
+        echo "load mali: failed [ump mast be loaded first]"
+        exit 1
+    fi
+
+    if [ ! -e /dev/mali ]; then
+        echo -n "load mali:"
+        modprobe mali
+        mknod /dev/mali c $(grep -F mali /proc/devices | cut -d" " -f1) 0
+        chmod 666 /dev/mali
+        echo "OK"
+    fi
+}
+
+stop_mali() {
+   echo -n "stop mali: "
+   if [ -e /dev/mali ]; then
+        rmmod mali
+        rm /dev/mali
+        echo "OK"
+   else
+        echo "failed"
+   fi
+}
+
+
+stop_ump() {
+   echo -n "stop ump: "
+   if [ -e /dev/ump ]; then
+        rmmod ump
+        rm /dev/ump
+        echo "OK"
+   else
+        echo "failed"
+   fi
+}
+
+case "$1" in
+    start)
+        start_ump
+        start_mali
+       ;;
+    stop)
+        stop_mali
+        stop_ump
+       ;;
+    restart)
+        stop_mali
+        stop_ump
+        sleep 1
+        start_ump
+        start_mali
+       ;;
+    status)
+       # TODO
+       ;;
+    *)
+       echo "Usage: $0 {start|stop|restart}"
+       exit 1
+esac
+

@@ -1,0 +1,17 @@
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+	hostname mcom
+
+# If you want configure 6LoWPAN interface uncomment following lines
+# auto lowpan0
+# iface lowpan0 inet6 static
+#	address fc00::1
+#	netmask 8
+
+# Additional parameters for 6LoWPAN interfaces
+# pan-id - WPAN ID
+# pan-addr - WPAN address
+# pan-channel - WPAN channel

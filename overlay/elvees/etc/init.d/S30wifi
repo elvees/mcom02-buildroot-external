@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ "$1" == "start" ]
+then
+	ifconfig wlan0 &> /dev/null
+	rc=$?
+	if [ -e /sys/bus/sdio/drivers/brcmfmac_sdio/mmc1:0001:2 -a $rc != 0 ]
+	then
+		echo mmc1:0001:2 > /sys/bus/sdio/drivers/brcmfmac_sdio/unbind
+		echo mmc1:0001:2 > /sys/bus/sdio/drivers/brcmfmac_sdio/bind
+	fi
+fi

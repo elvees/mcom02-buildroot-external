@@ -1,0 +1,5 @@
+config BR2_PACKAGE_UART_LOOPBACK_TEST
+	bool "uart-loopback-test"
+	default n
+	help
+	  Python test for uart in loopback mode
