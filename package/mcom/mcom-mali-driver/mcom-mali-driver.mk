@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-MCOM_MALI_DRIVER_VERSION = r3p0-04rel0-v1.0
+MCOM_MALI_DRIVER_VERSION = r3p0-04rel0-v2.0
 MCOM_MALI_DRIVER_DEPENDENCIES = linux
 MCOM_MALI_DRIVER_LICENSE = custom
 MCOM_MALI_DRIVER_SITE = $(BR2_EXTERNAL)/package/mcom/mcom-mali-driver
