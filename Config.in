@@ -9,21 +9,7 @@ menu "MCom platform"
 endmenu
 
 menu "Hardware handling"
-source "$BR2_EXTERNAL/package/uio-velcore02-driver/Config.in"
 source "$BR2_EXTERNAL/package/avico-driver/Config.in"
-endmenu
-
-menu "Libraries"
-source "$BR2_EXTERNAL/package/velcore02_testing/Config.in"
-source "$BR2_EXTERNAL/package/libocr/Config.in"
-endmenu
-
-menu "Test data"
-source "$BR2_EXTERNAL/package/ocr_test_images/Config.in"
-endmenu
-
-menu "Video analytics"
-source "$BR2_EXTERNAL/package/ocrtest/Config.in"
 endmenu
 
 menu "Benchmarks"
