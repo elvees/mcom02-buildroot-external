@@ -1,0 +1,5 @@
+config BR2_PACKAGE_MCOM_LINUX_TESTS
+	bool "MCom Linux tests"
+	default n
+	help
+	  Different tests and tools for MCom platform
