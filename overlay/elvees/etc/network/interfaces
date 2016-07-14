@@ -5,6 +5,12 @@ auto eth0
 iface eth0 inet dhcp
 	hostname mcom
 
+auto can0
+iface can0 inet manual
+	pre-up ip link set can0 type can bitrate 125000
+	up ip link set can0 up
+	down ip link set can0 down
+
 # If you want configure 6LoWPAN interface uncomment following lines
 # auto lowpan0
 # iface lowpan0 inet6 static
