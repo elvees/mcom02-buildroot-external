@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-AVICO_DRIVER_VERSION = 0.9
+AVICO_DRIVER_VERSION = 1.0
 AVICO_DRIVER_DEPENDENCIES = linux
 AVICO_DRIVER_LICENSE = GPL
 AVICO_DRIVER_SITE = $(BR2_EXTERNAL)/package/avico-driver
