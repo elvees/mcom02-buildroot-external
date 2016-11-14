@@ -1,0 +1,20 @@
+#!/bin/sh
+
+start() {
+	if ! grep -q 'Salute' /proc/asound/cards; then
+		exit 1
+	fi
+
+	# TODO: Use alsactl to restore driver setup
+	amixer -q cset name='HP Mix DAC2HP Playback Switch' on
+	amixer -q cset name='SpeakerOut Mux' 1
+	amixer -q cset name='SpeakerOut N Mux' 0
+	amixer -q cset name='Line Playback Switch' on
+	amixer -q cset name='Left Capture Mix LineInL Capture Switch' on
+	amixer -q cset name='Right Capture Mix LineInR Capture Switch' on
+}
+
+case "$1" in
+start)
+	start;;
+esac
