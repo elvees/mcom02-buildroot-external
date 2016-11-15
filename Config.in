@@ -1,6 +1,7 @@
 menu "Target packages"
 
 menu "MCom platform"
+	source "$BR2_EXTERNAL/package/mcom/mcom-checkers/Config.in"
 	source "$BR2_EXTERNAL/package/mcom/mcom-fc-dsp/Config.in"
 	source "$BR2_EXTERNAL/package/mcom/mcom-libdsp/Config.in"
 	source "$BR2_EXTERNAL/package/mcom/mcom-linux-tests/Config.in"
