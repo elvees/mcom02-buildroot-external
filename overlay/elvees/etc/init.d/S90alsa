@@ -1,7 +1,7 @@
 #!/bin/sh
 
 start() {
-	if ! grep -q 'Salute' /proc/asound/cards; then
+	if ! grep -q 'Salute-EL24D[123]' /proc/asound/cards; then
 		exit 1
 	fi
 
