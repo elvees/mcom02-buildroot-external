@@ -10,10 +10,6 @@ menu "MCom platform"
 	source "$BR2_EXTERNAL/package/v4l2tofb/Config.in"
 endmenu
 
-menu "Hardware handling"
-source "$BR2_EXTERNAL/package/avico-driver/Config.in"
-endmenu
-
 menu "Benchmarks"
 source "$BR2_EXTERNAL/package/coremark/Config.in"
 source "$BR2_EXTERNAL/package/m2m-test/Config.in"
