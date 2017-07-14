@@ -29,8 +29,8 @@ mode "AT070TN92"
     timings 30030 85 85 15 15 86 15
 endmode
 
-# timings have been taken from EJ070NA-01J module specification
+# timings have been taken from EJ070NA-01J module specification (1024x600@60)
 mode "EJ070NA-01J"
     geometry 1024 600 1024 600 32
-    timings 65100 100 100 10 10 120 15
+    timings 18977 100 100 10 10 120 15
 endmode
