@@ -1,0 +1,4 @@
+config BR2_PACKAGE_MCOM_LIBMALI
+	bool "libmali"
+	help
+	  Mali GPU library for MCom platform
