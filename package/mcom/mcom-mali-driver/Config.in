@@ -1,6 +1,5 @@
 config BR2_PACKAGE_MCOM_MALI_DRIVER
 	bool "mali-driver"
-	default n
 	depends on BR2_LINUX_KERNEL
 	help
 	  Mali GPU driver and library for MCom platform
