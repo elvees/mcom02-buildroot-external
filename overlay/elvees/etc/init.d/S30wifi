@@ -6,7 +6,7 @@ then
 	rc=$?
 	if [ -e /sys/bus/sdio/drivers/brcmfmac_sdio/mmc1:0001:2 -a $rc != 0 ]
 	then
-		echo '3800d000.sdhci1' > /sys/bus/platform/drivers/sdhci-arasan/unbind
-		echo '3800d000.sdhci1' > /sys/bus/platform/drivers/sdhci-arasan/bind
+		echo '3800d000.sdhci1' > /sys/bus/platform/drivers/sdhci-mcom02/unbind
+		echo '3800d000.sdhci1' > /sys/bus/platform/drivers/sdhci-mcom02/bind
 	fi
 fi
