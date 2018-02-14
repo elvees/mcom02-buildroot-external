@@ -1,5 +1,6 @@
 config BR2_PACKAGE_V4L2TOFB
 	bool "v4l2tofb"
 	default n
+	depends on BR2_PACKAGE_LIBDRM
 	help
 	  Utility for displaying video from V4L2 device to fb device.
