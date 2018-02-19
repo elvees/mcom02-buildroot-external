@@ -13,11 +13,6 @@ mode "1280x720@60"
     timings 13890 220 110 20 5 40 5
 endmode
 
-mode "1920x1080@30"
-    geometry 1920 1080 1920 1080 32
-    timings 13468 148 88 36 4 44 5
-endmode
-
 mode "1920x1080@60"
     geometry 1920 1080 1920 1080 32
     timings 6945 148 88 36 4 44 5
