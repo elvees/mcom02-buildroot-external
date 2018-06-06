@@ -7,6 +7,7 @@ menu "MCom platform"
 	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-libmali/Config.in"
 	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-linux-tests/Config.in"
 	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-mali-driver/Config.in"
+	source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx/Config.in"
 	source "$BR2_EXTERNAL_MCOM02_PATH/package/uart-loopback-test/Config.in"
 	source "$BR2_EXTERNAL_MCOM02_PATH/package/v4l2tofb/Config.in"
 endmenu
