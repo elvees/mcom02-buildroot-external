@@ -1,0 +1,4 @@
+config BR2_PACKAGE_OPENVX_HEADERS
+	bool "openvx-headers"
+	help
+	  An OpenVX standard headers

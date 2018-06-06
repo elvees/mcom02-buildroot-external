@@ -19,6 +19,7 @@ endmenu
 menu "Libraries"
 	menu "Graphics"
 		source "$BR2_EXTERNAL_MCOM02_PATH/package/cimg/Config.in"
+		source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx-headers/Config.in"
 	endmenu
 endmenu
 
