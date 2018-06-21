@@ -15,8 +15,9 @@ source "$BR2_EXTERNAL_MCOM02_PATH/package/uart-loopback-test/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/v4l2tofb/Config.in"
 endmenu
 
-menu "Benchmarks"
+menu "Tests and Benchmarks"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/coremark/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/igt-gpu-tools/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/m2m-test/Config.in"
 endmenu
 
