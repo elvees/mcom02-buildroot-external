@@ -1,5 +1,0 @@
-config BR2_PACKAGE_LIBUIO
-	bool "libuio"
-	help
-	  Userspace I/O library which serve as a
-	  linux backend for sgbmdriver

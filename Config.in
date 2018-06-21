@@ -1,19 +1,19 @@
 menu "Target packages"
 
 menu "MCom platform"
-	source "$BR2_EXTERNAL/package/mcom/mcom-checkers/Config.in"
-	source "$BR2_EXTERNAL/package/mcom/mcom-fc-dsp/Config.in"
-	source "$BR2_EXTERNAL/package/mcom/mcom-libdsp/Config.in"
-	source "$BR2_EXTERNAL/package/mcom/mcom-libmali/Config.in"
-	source "$BR2_EXTERNAL/package/mcom/mcom-linux-tests/Config.in"
-	source "$BR2_EXTERNAL/package/mcom/mcom-mali-driver/Config.in"
-	source "$BR2_EXTERNAL/package/uart-loopback-test/Config.in"
-	source "$BR2_EXTERNAL/package/v4l2tofb/Config.in"
+	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-checkers/Config.in"
+	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-fc-dsp/Config.in"
+	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-libdsp/Config.in"
+	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-libmali/Config.in"
+	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-linux-tests/Config.in"
+	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-mali-driver/Config.in"
+	source "$BR2_EXTERNAL_MCOM02_PATH/package/uart-loopback-test/Config.in"
+	source "$BR2_EXTERNAL_MCOM02_PATH/package/v4l2tofb/Config.in"
 endmenu
 
 menu "Benchmarks"
-source "$BR2_EXTERNAL/package/coremark/Config.in"
-source "$BR2_EXTERNAL/package/m2m-test/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/coremark/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/m2m-test/Config.in"
 endmenu
 
 endmenu
