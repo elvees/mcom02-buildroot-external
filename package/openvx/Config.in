@@ -1,9 +1,9 @@
 config BR2_PACKAGE_OPENVX
 	bool "openvx"
-	select BR2_PACKAGE_OPENVX_HEADERS
 	depends on BR2_ARM_EABIHF
 	depends on BR2_SHARED_LIBS
 	depends on BR2_TOOLCHAIN_USES_GLIBC
+	select BR2_PACKAGE_OPENVX_HEADERS
 	help
 	  An OpenVX library with optimizations for DSP.
 	  Compiled with: libc.so.6, libm.so.6, libdl.so.2, arm EABIhf

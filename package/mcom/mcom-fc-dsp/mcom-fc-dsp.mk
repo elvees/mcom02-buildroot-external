@@ -8,7 +8,6 @@ MCOM_FC_DSP_VERSION = 101
 MCOM_FC_DSP_SITE = https://hyperion.elvees.com/linuxnvcom01/tools/tests/dsp
 MCOM_FC_DSP_SITE_METHOD = svn
 MCOM_FC_DSP_DEPENDENCIES = mcom-libdsp
-MCOM_FC_DSP_INSTALL_TARGET = YES
 MCOM_FC_DSP_LICENSE = unknown
 
 define MCOM_FC_DSP_BUILD_CMDS

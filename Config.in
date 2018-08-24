@@ -1,16 +1,16 @@
 menu "Target packages"
 
 menu "MCom platform"
-	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-checkers/Config.in"
-	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-fc-dsp/Config.in"
-	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-libdsp/Config.in"
-	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-libmali/Config.in"
-	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-linux-tests/Config.in"
-	source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-mali-driver/Config.in"
-	source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx/Config.in"
-	source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx-demo/Config.in"
-	source "$BR2_EXTERNAL_MCOM02_PATH/package/uart-loopback-test/Config.in"
-	source "$BR2_EXTERNAL_MCOM02_PATH/package/v4l2tofb/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-checkers/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-fc-dsp/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-libdsp/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-libmali/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-linux-tests/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-mali-driver/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx-demo/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/uart-loopback-test/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/v4l2tofb/Config.in"
 endmenu
 
 menu "Benchmarks"
@@ -19,10 +19,10 @@ source "$BR2_EXTERNAL_MCOM02_PATH/package/m2m-test/Config.in"
 endmenu
 
 menu "Libraries"
-	menu "Graphics"
-		source "$BR2_EXTERNAL_MCOM02_PATH/package/cimg/Config.in"
-		source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx-headers/Config.in"
-	endmenu
+menu "Graphics"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/cimg/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx-headers/Config.in"
+endmenu
 endmenu
 
 endmenu
