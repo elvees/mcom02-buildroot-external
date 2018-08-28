@@ -1,5 +1,0 @@
-config BR2_PACKAGE_MCOM_CHECKERS
-	bool "Checkers for MCom testing"
-	default n
-	help
-	  Python library libchecker and scripts for mcom testing
