@@ -1,0 +1,5 @@
+#!/bin/bash
+
+while ! lsmod | grep mali &> /dev/null; do
+  modprobe mali
+done
