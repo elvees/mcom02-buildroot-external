@@ -13,8 +13,8 @@ OPENVX_HEADERS_INSTALL_TARGET = NO
 OPENVX_HEADERS_STRIP_COMPONENTS = 0
 
 define OPENVX_HEADERS_INSTALL_STAGING_CMDS
-	$(INSTALL) -d $(STAGING_DIR)/include/VX
-	$(INSTALL) -m 0644 $(@D)/*.h -t $(STAGING_DIR)/include/VX/
+	$(INSTALL) -d $(STAGING_DIR)/usr/include/VX
+	$(INSTALL) -m 0644 $(@D)/*.h -t $(STAGING_DIR)/usr/include/VX/
 endef
 
 $(eval $(generic-package))
