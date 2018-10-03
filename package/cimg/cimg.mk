@@ -17,7 +17,7 @@ define CIMG_EXTRACT_CMDS
 endef
 
 define CIMG_INSTALL_STAGING_CMDS
-	$(INSTALL) -D -m 0644 $(@D)/CImg-$(CIMG_VERSION)/CImg.h $(STAGING_DIR)/include/CImg.h
+	$(INSTALL) -D -m 0644 $(@D)/CImg-$(CIMG_VERSION)/CImg.h $(STAGING_DIR)/usr/include/CImg.h
 endef
 
 $(eval $(generic-package))
