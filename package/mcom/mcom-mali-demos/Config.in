@@ -1,0 +1,6 @@
+config BR2_PACKAGE_MCOM_MALI_DEMOS
+	bool "mali-demos"
+	select BR2_PACKAGE_MCOM_LIBMALI
+	help
+	  A set of applications for demonstrating 3D-acceleration
+	  on Mali GPU.
