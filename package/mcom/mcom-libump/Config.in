@@ -1,0 +1,4 @@
+config BR2_PACKAGE_MCOM_LIBUMP
+	bool "libump"
+	help
+	  Unified Memory Provider library for Mali GPUs
