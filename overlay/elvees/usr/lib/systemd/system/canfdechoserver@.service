@@ -1,0 +1,8 @@
+[Unit]
+Description=CAN full-duplex echo server
+
+[Service]
+ExecStart=/bin/canfdtest %i
+
+[Install]
+WantedBy=multi-user.target
