@@ -1,0 +1,16 @@
+[Unit]
+Description=Create 6lowpan (IEEE802.15.4) network device
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/ip link add link wpan0 lowpan0 type lowpan
+ExecStart=/usr/sbin/ip link set wpan0 up
+ExecStart=/usr/sbin/ip link set lowpan0 up
+ExecStart=/usr/sbin/ip addr add fc00::2/8 dev lowpan0
+ExecStop=/usr/sbin/ip link delete lowpan0
+ExecStop=/usr/sbin/ip link set wpan0 down
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
