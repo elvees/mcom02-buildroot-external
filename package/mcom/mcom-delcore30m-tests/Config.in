@@ -1,0 +1,13 @@
+config BR2_PACKAGE_MCOM_DELCORE30M_TESTS
+	bool "delcore30m tests"
+	depends on BR2_PACKAGE_LIBDRM
+	depends on BR2_PACKAGE_PYTHON
+	select BR2_PACKAGE_GOOGLEFONTDIRECTORY
+	select BR2_TOOLCHAIN_ELCORE30M
+	help
+	  Testing applications for delcore30m driver.
+
+comment "delcore30m tests need libdrm"
+	depends on !BR2_PACKAGE_LIBDRM
+comment "delcore30m tests need Python"
+	depends on !BR2_PACKAGE_PYTHON
