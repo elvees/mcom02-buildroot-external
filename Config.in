@@ -1,3 +1,7 @@
+menu "Toolchains"
+source "$BR2_EXTERNAL_MCOM02_PATH/toolchain/toolchain-elcore30m/Config.in"
+endmenu
+
 menu "Target packages"
 
 menu "MCom platform"

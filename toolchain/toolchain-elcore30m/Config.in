@@ -1,0 +1,4 @@
+config BR2_TOOLCHAIN_ELCORE30M
+	bool "ELcore-30M toolchain"
+	help
+	  Download and prepare ELcore-30M toolchain
