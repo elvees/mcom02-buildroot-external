@@ -1,0 +1,4 @@
+config BR2_PACKAGE_MCOM_LIBSWIC
+	bool "libswic"
+	help
+	  Applications and tests for MCom-02 SWIC driver
