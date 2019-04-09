@@ -6,7 +6,7 @@
 
 MCOM_MALI_DRIVER_VERSION = mcom02
 MCOM_MALI_DRIVER_DEPENDENCIES = linux
-MCOM_MALI_DRIVER_SITE = ssh://callisto.elvees.com:29418/linux/modules/mali
+MCOM_MALI_DRIVER_SITE = ssh://gerrit.elvees.com:29418/linux/modules/mali
 MCOM_MALI_DRIVER_SITE_METHOD = git
 
 # TODO: Rework repository to use $(kernel-module) infrastructure
