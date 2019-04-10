@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """
 A tool to create a large partition at the end of MMCBLK
@@ -13,7 +13,7 @@ MMCBLK = '/dev/mmcblk0'
 MOUNT_DIR = '/data'
 FS_TYPE = 'ext4'
 
-pstring = subprocess.check_output(['parted', MMCBLK, 'unit', 's', 'print', 'free'])
+pstring = subprocess.check_output(['parted', MMCBLK, 'unit', 's', 'print', 'free'], universal_newlines=True)
 ptable_before = set(glob.glob(MMCBLK + '*'))
 freesp = pstring.rstrip().split('\n')[-1]
 
@@ -34,4 +34,3 @@ with open('/etc/fstab', 'a') as f:
 if not os.path.exists(MOUNT_DIR):
     os.mkdir(MOUNT_DIR)
 subprocess.check_call(['mount', '-a'])
-
