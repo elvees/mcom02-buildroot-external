@@ -1,6 +1,5 @@
 config BR2_PACKAGE_M2M_TEST
 	bool "M2M test"
-	default n
 	select BR2_PACKAGE_FFMPEG
 	help
 	  Testing application for V4L2 M2M devices

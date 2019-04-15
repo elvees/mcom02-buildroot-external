@@ -1,5 +1,4 @@
 config BR2_PACKAGE_COREMARK
 	bool "Coremark"
-	default n
 	help
 	  EEMBC Coremark benchmark

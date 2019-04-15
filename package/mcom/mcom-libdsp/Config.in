@@ -1,5 +1,4 @@
 config BR2_PACKAGE_MCOM_LIBDSP
 	bool "libdsp"
-	default n
 	help
 	  Library to access DSP cores from userspace
