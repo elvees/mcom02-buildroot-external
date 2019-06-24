@@ -1,4 +1,8 @@
 config BR2_PACKAGE_MCOM_LIBSWIC
 	bool "libswic"
+	depends on BR2_PACKAGE_PYTHON3
 	help
 	  Applications and tests for MCom-02 SWIC driver
+
+comment "libswic need Python 3"
+	depends on !BR2_PACKAGE_PYTHON3
