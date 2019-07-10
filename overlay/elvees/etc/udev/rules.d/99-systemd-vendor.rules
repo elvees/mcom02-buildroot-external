@@ -1,0 +1,3 @@
+SUBSYSTEM=="spacewire", TAG+="systemd"
+SUBSYSTEM=="video4linux", TAG+="systemd"
+SUBSYSTEM=="graphics", TAG+="systemd"
