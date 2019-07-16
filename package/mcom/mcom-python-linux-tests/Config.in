@@ -1,6 +1,6 @@
 config BR2_PACKAGE_MCOM_PYTHON_LINUX_TESTS
 	bool "MCom Python Linux tests"
-	depends on BR2_PACKAGE_PYTHON
+	depends on BR2_PACKAGE_PYTHON3
 	select BR2_PACKAGE_MCOM_LINUX_TESTS
 	help
 	  Various Python tests and tools for MCom-02 platform
