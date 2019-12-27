@@ -1,5 +1,0 @@
-config BR2_PACKAGE_MEMTESTER_SIMPLE
-	bool "memtester-simple"
-	default y
-	help
-	  Simplified version of memtester

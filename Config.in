@@ -5,8 +5,6 @@ endmenu
 menu "Target packages"
 
 menu "MCom platform"
-source "$BR2_EXTERNAL_MCOM02_PATH/package/audio-tests/Config.in"
-source "$BR2_EXTERNAL_MCOM02_PATH/package/dmatestcontig/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-delcore30m-tests/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-fc-dsp/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-libdsp/Config.in"
@@ -17,24 +15,13 @@ source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-linux-tests/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-mali-demos/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-mali-driver/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/mcom/mcom-python-linux-tests/Config.in"
-source "$BR2_EXTERNAL_MCOM02_PATH/package/memtester-simple/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx-demo/Config.in"
-source "$BR2_EXTERNAL_MCOM02_PATH/package/uart-loopback-test/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/v4l2tofb/Config.in"
 endmenu
 
 menu "Tests and Benchmarks"
-source "$BR2_EXTERNAL_MCOM02_PATH/package/coremark/Config.in"
-source "$BR2_EXTERNAL_MCOM02_PATH/package/igt-gpu-tools/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/m2m-test/Config.in"
-endmenu
-
-menu "Libraries"
-menu "Graphics"
-source "$BR2_EXTERNAL_MCOM02_PATH/package/cimg/Config.in"
-source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx-headers/Config.in"
-endmenu
 endmenu
 
 endmenu

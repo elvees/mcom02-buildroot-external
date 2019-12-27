@@ -1,9 +1,0 @@
-config BR2_PACKAGE_AUDIO_TESTS
-	bool "audio-tests"
-	depends on BR2_PACKAGE_PYTHON_NUMPY_ARCH_SUPPORTS
-	depends on BR2_PACKAGE_PYTHON || BR2_PACKAGE_PYTHON3
-	select BR2_PACKAGE_PYTHON_NUMPY
-	help
-	  Audio-tests package contains an utility to test
-	  audio input/output. It analyzes WAV file and print
-	  amplitude, frequency and noise level for each channel.

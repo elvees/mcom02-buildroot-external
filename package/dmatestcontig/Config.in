@@ -1,5 +1,0 @@
-config BR2_PACKAGE_DMATESTCONTIG
-	bool "dmatestcontig"
-	help
-	  A kernel module for benchmarking DMA speed on large
-	  contiguous buffers.

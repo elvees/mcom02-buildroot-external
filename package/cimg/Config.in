@@ -1,6 +1,0 @@
-config BR2_PACKAGE_CIMG
-	bool "cimg"
-	select BR2_PACKAGE_LIBPNG
-	select BR2_PACKAGE_JPEG
-	help
-	  A small and open-source C++ toolkit for image processing
