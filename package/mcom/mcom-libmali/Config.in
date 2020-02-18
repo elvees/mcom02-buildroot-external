@@ -2,5 +2,17 @@ config BR2_PACKAGE_MCOM_LIBMALI
 	bool "libmali"
 	select BR2_PACKAGE_MCOM_LIBUMP
 	select BR2_PACKAGE_MCOM_MALI_DRIVER
+	select BR2_PACKAGE_HAS_LIBEGL
+	select BR2_PACKAGE_HAS_LIBGLES
 	help
 	  Mali GPU library for MCom platform
+
+if BR2_PACKAGE_MCOM_LIBMALI
+
+config BR2_PACKAGE_PROVIDES_LIBEGL
+	default "mcom-libmali"
+
+config BR2_PACKAGE_PROVIDES_LIBGLES
+	default "mcom-libmali"
+
+endif
