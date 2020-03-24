@@ -1,0 +1,8 @@
+config BR2_PACKAGE_RF2CHAN_V2_GNSS
+	bool "rf2chan v2 gnss"
+	depends on BR2_LINUX_KERNEL
+	help
+	  A kernel module for RF2Chan v2 GNNS front end module.
+
+comment "rf2chan v2 gnss driver needs a Linux kernel to be built"
+	depends on !BR2_LINUX_KERNEL
