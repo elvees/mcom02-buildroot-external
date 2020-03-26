@@ -1,0 +1,9 @@
+config BR2_PACKAGE_MCOM_TALITA
+	bool "talita"
+	depends on BR2_LINUX_KERNEL
+	select BR2_PACKAGE_RF2CHAN_V2_GNSS
+	help
+	  An ELVEES GNSS proprietary binary driver which is indended to
+	  be used for Salute-EL24D1 with RF2Chan v2 front end module
+comment "talita needs a Linux kernel to be built"
+	depends on !BR2_LINUX_KERNEL
