@@ -1,0 +1,2 @@
+disable spacewire-video-receive.service
+disable spacewire-video-transmit.service
