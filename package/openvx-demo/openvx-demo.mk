@@ -7,7 +7,7 @@
 OPENVX_DEMO_VERSION = 0.1.2
 OPENVX_DEMO_SOURCE = openvx_demo-v$(OPENVX_DEMO_VERSION).tar.gz
 OPENVX_DEMO_LICENSE = custom
-OPENVX_DEMO_SITE = https://diver.elvees.com/share/openvx_demo/-/archive/v$(OPENVX_DEMO_VERSION)
+OPENVX_DEMO_SITE = https://warlock.elvees.com/share/openvx_demo/-/archive/v$(OPENVX_DEMO_VERSION)
 OPENVX_DEMO_DEPENDENCIES = openvx cimg
 
 $(eval $(cmake-package))
