@@ -5,7 +5,7 @@
 ################################################################################
 
 MCOM_TALITA_VERSION = master
-MCOM_TALITA_SITE = ssh://git@git.elvees.com/gnss/mcom02-linux/talita.git
+MCOM_TALITA_SITE = ssh://git@git.elvees.com:22/gnss/mcom02-linux/talita.git
 MCOM_TALITA_SITE_METHOD = git
 MCOM_TALITA_LICENSE = custom
 MCOM_TALITA_INSTALL_STAGING = YES
