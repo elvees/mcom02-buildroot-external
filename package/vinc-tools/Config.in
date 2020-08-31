@@ -1,0 +1,4 @@
+config BR2_PACKAGE_VINC_TOOLS
+	bool "vinc-tools"
+	help
+	  Utilities to manage VINC ISP V4L2 device

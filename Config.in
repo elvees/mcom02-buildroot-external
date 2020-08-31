@@ -21,6 +21,7 @@ source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx-cts/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/openvx-demo/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/rf2chan-v2-gnss/Config.in"
 source "$BR2_EXTERNAL_MCOM02_PATH/package/v4l2tofb/Config.in"
+source "$BR2_EXTERNAL_MCOM02_PATH/package/vinc-tools/Config.in"
 endmenu
 
 menu "Tests and Benchmarks"
