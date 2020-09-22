@@ -1,0 +1,5 @@
+config BR2_PACKAGE_OPENVX_CTS
+	bool "openvx-cts"
+	select BR2_PACKAGE_OPENVX
+	help
+	  OpenVX Conformance Test Suite to validate OpenVX library
