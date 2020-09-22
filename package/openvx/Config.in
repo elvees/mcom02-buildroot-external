@@ -5,5 +5,5 @@ config BR2_PACKAGE_OPENVX
 	depends on BR2_TOOLCHAIN_USES_GLIBC
 	select BR2_PACKAGE_OPENVX_HEADERS
 	help
-	  An OpenVX library with optimizations for DSP.
+	  An OpenVX library.
 	  Compiled with: libc.so.6, libm.so.6, libdl.so.2, arm EABIhf
