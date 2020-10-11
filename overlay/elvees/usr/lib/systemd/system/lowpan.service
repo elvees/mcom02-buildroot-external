@@ -1,6 +1,7 @@
 [Unit]
 Description=Create 6lowpan (IEEE802.15.4) network device
-After=network.target
+BindsTo=sys-subsystem-net-devices-wpan0.device
+After=network.target sys-subsystem-net-devices-wpan0.device
 
 [Service]
 Type=oneshot
