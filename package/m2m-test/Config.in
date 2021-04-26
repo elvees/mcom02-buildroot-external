@@ -1,5 +1,14 @@
 config BR2_PACKAGE_M2M_TEST
 	bool "M2M test"
 	select BR2_PACKAGE_FFMPEG
+	imply BR2_PACKAGE_LIBDRM
+	imply BR2_PACKAGE_SDL2
 	help
 	  Testing application for V4L2 M2M devices
+
+if BR2_PACKAGE_M2M_TEST
+
+comment "dec-vpout won't be built, because libdrm or sdl2 isn't selected"
+	depends on !BR2_PACKAGE_LIBDRM || !BR2_PACKAGE_SDL2
+
+endif
