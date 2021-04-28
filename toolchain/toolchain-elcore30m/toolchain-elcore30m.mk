@@ -5,7 +5,7 @@
 ################################################################################
 
 TOOLCHAIN_ELCORE30M_VERSION := 8365_2018.04.05
-TOOLCHAIN_ELCORE30M_SITE := ftp://ftp.elvees.com/1892VM14YA/Baremetal/Tools/Linux
+TOOLCHAIN_ELCORE30M_SITE := http://dist.elvees.com/support/1892VM14YA/Baremetal/Tools/Linux
 TOOLCHAIN_ELCORE30M_SOURCE := eltools_3.6_linux_$(TOOLCHAIN_ELCORE30M_VERSION).tar.gz
 TOOLCHAIN_ELCORE30M_INSTALL_DIR := $(HOST_DIR)/opt/toolchain-elcore30m
 
