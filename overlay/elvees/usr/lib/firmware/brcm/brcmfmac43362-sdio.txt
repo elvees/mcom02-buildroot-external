@@ -54,4 +54,3 @@ btc_flags=0x6
 btc_params0=5000
 btc_params1=1000
 btc_params6=63
-
