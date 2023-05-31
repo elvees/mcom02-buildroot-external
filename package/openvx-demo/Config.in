@@ -1,6 +1,0 @@
-config BR2_PACKAGE_OPENVX_DEMO
-	bool "openvx-demo"
-	select BR2_PACKAGE_OPENVX
-	select BR2_PACKAGE_CIMG
-	help
-	  A bunch of samples of OpenVX library usage
