@@ -3,7 +3,15 @@ config BR2_PACKAGE_OPENVX
 	depends on BR2_ARM_EABIHF
 	depends on BR2_SHARED_LIBS
 	depends on BR2_TOOLCHAIN_USES_GLIBC
+	select BR2_PACKAGE_HAS_OPENVX_VIRTUAL
 	select BR2_PACKAGE_OPENVX_HEADERS
 	help
 	  An OpenVX library.
 	  Compiled with: libc.so.6, libm.so.6, libdl.so.2, arm EABIhf
+
+if BR2_PACKAGE_OPENVX
+
+config BR2_PACKAGE_PROVIDES_OPENVX_VIRTUAL
+	default "openvx"
+
+endif

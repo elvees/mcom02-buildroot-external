@@ -10,7 +10,10 @@ OPENVX_LICENSE = custom
 OPENVX_SITE = $(BR2_EXTERNAL_MCOM02_PATH)/package/openvx
 OPENVX_SITE_METHOD = local
 OPENVX_INSTALL_STAGING = YES
+OPENVX_PROVIDES = openvx-virtual
 OPENVX_DEPENDENCIES = openvx-headers
+
+OPENVX_LIBS = libopenvx_wrapper.so;libopenvx_kernels.so
 
 define OPENVX_INSTALL_CMD
 	$(INSTALL) -D -m 0755 $(@D)/libopenvx_wrapper.so.$(OPENVX_VERSION) $(1)/usr/lib/libopenvx_wrapper.so.$(OPENVX_VERSION)
