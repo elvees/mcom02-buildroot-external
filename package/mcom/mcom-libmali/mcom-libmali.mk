@@ -6,7 +6,7 @@
 
 MCOM_LIBMALI_VERSION = mcom02
 MCOM_LIBMALI_LICENSE = custom
-MCOM_LIBMALI_SITE = ssh://gerrit.elvees.com:29418/bin/mali
+MCOM_LIBMALI_SITE = ssh://gerrit.elvees.com:29418/mcom02/mali-bin
 MCOM_LIBMALI_SITE_METHOD = git
 MCOM_LIBMALI_INSTALL_STAGING = YES
 MCOM_LIBMALI_DEPENDENCIES = mcom-libump
