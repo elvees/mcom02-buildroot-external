@@ -1,4 +1,10 @@
 - project:
+    experimental:
+      jobs:
+        - mcom02-buildroot-build:
+            vars:
+              build_sdk: true
+
     check:
       jobs:
         - mcom02-buildroot-build:
