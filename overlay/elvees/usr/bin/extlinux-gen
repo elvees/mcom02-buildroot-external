@@ -7,9 +7,10 @@
 
 [[ -v ROOT ]] || ROOT=/dev/mmcblk0p1
 [[ -v CONSOLE ]] || CONSOLE=ttyS0,115200n8
+[[ -v VIDEO ]] || VIDEO=HDMI:1920x1080
 
 if [[ ! -v CMDLINE ]]; then
-    CMDLINE="${CONSOLE:+console=$CONSOLE} earlycon ${ROOT:+root=$ROOT roottype=ext4 rw rootwait}"
+    CMDLINE="${CONSOLE:+console=$CONSOLE} earlycon ${ROOT:+root=$ROOT roottype=ext4 rw rootwait} ${VIDEO:+video=$VIDEO}"
 fi
 
 if [[ -v FDT ]]; then
@@ -29,5 +30,9 @@ LABEL default
     MENU LABEL Default (/boot/zImage)
     LINUX /boot/zImage
     $FDTCMD /boot/elvees/$FDT
+    # Pass extra arguments for buggy drivers:
+    # * video=... is required for vpout-drm on Salute-ELPM2 for video output
+    # * blacklist=vpoutfb is recommended on Salute-EL24D1/D2 boards if video output is not
+    #   required (otherwise vpoutfb reads data from DDR needlessly consuming DDR bandwidth).
     ${CMDLINE:+APPEND $CMDLINE}
 EOF
