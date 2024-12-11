@@ -13,9 +13,6 @@ BR2_PACKAGE_MCOM_MALI_DRIVER=n
 # Temporary disable dmatestcontig (#MCOM02SW-2162)
 BR2_PACKAGE_DMATESTCONTIG=n
 
-# Temporary disable libswic (#MCOM02SW-2163)
-BR2_PACKAGE_MCOM_LIBSWIC=n
-
 # Temporary disable RF2CHAN package and its "selected by"  (#MCOM02SW-2165)
 BR2_PACKAGE_MCOM_TALITA=n
 BR2_PACKAGE_RF2CHAN_V2_GNSS=n
