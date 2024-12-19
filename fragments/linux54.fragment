@@ -1,11 +1,8 @@
 BR2_LINUX_KERNEL_CUSTOM_REPO_VERSION="mcom02-5.4.y"
 BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_5_4=y
 
-# Disable ARM Mali kernel driver with its precompiled userspace library,
-# replace it with OSS driver "Lima" and "Mesa 3D" userspace.
-# Tests and Buildroot packages should be updated to select new dependency (#MCOM02SW-2161)
-BR2_PACKAGE_MCOM_PYTHON_LINUX_TESTS=n
-BR2_PACKAGE_MCOM_LINUX_TESTS=n
+# Proprietary Mali driver is not available on Linux 5.4
+BR2_PACKAGE_MCOM_LINUX_TESTS_MALI_UTILS=n
 BR2_PACKAGE_MCOM_MALI_DEMOS=n
 BR2_PACKAGE_MCOM_LIBMALI=n
 BR2_PACKAGE_MCOM_MALI_DRIVER=n

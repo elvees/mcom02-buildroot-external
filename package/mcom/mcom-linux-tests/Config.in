@@ -1,7 +1,17 @@
 config BR2_PACKAGE_MCOM_LINUX_TESTS
 	bool "MCom Linux tests"
 	select BR2_PACKAGE_DMATESTCONTIG
-	select BR2_PACKAGE_MCOM_MALI_DEMOS
 	select BR2_PACKAGE_MEMTESTER_SIMPLE
 	help
 	  Different tests and tools for MCom platform
+
+if BR2_PACKAGE_MCOM_LINUX_TESTS
+
+config BR2_PACKAGE_MCOM_LINUX_TESTS_MALI_UTILS
+	bool "Utils for proprietary Mali driver"
+	default n
+	select BR2_PACKAGE_MCOM_MALI_DEMOS
+	help
+	  Utils for proprietary Mali Driver
+
+endif

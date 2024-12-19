@@ -4,6 +4,11 @@
         - mcom02-buildroot-build:
             vars:
               build_sdk: true
+        - libfc-linux44-fct-salutepmukf-tests:
+            dependencies: [mcom02-buildroot-build]
+        - mcom02-linux54-buildroot-build
+        - libfc-linux54-fct-salutepmukf-tests:
+            dependencies: [mcom02-linux54-buildroot-build]
 
     check:
       jobs:
