@@ -14,4 +14,11 @@ config BR2_PACKAGE_MCOM_LINUX_TESTS_MALI_UTILS
 	help
 	  Utils for proprietary Mali Driver
 
+config BR2_PACKAGE_MCOM_LINUX_TESTS_DMATESTCONTIG
+	bool "Script to use dmatestcontig driver"
+	default n
+	select BR2_PACKAGE_DMATESTCONTIG
+	help
+	  Script to use dmatestcontig driver
+
 endif
