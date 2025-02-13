@@ -1,2 +1,3 @@
 disable lowpan.service
 disable mcom02-weston.service
+disable rngd.service
