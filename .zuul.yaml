@@ -14,6 +14,9 @@
       jobs:
         - mcom02-buildroot-build:
             irrelevant-files:
-              - ^fragments/linux54.fragment
-        - mcom02-linux54-buildroot-build
+              - fragments/linux54.fragment$
+              - configs/mcom02min_defconfig$
+        - mcom02-linux54-buildroot-build:
+            irrelevant-files:
+              - configs/mcom02min_defconfig$
         - pre-commit
